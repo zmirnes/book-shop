@@ -31,6 +31,7 @@
 
 .cartIcon {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .orderBtn {
@@ -43,8 +44,35 @@
   color: #1b3764;
 }
 
+.hamburgerMenu {
+  display: none;
+}
+
 @media only screen and (max-width: 1068px) {
   .nav {
+    gap: 0;
+  }
+
+  .navLinks {
     display: none;
+  }
+
+  .orderBtn {
+    display: none;
+  }
+
+  .cartIcon {
+    margin-right: 0;
+  }
+
+  .hamburgerMenu {
+    display: block !important;
+    width: 4rem;
+  }
+
+  .hamburgerMenuIcon {
+    display: block !important;
+    width: 100%;
+    cursor: pointer;
   }
 }

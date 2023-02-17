@@ -41,3 +41,22 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+
+  .sticky {
+    padding: 0 !important;
+  }
+
+  .headerWrapper {
+    width: 100%;
+    padding-left: 0.5rem;
+  }
+
+  .socialIcons {
+    display: none;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import cart from "../../assets/images/cart.svg";
 import classes from "./NavLinks.module.css";
+import hamburgerMenu from "../../assets/images/hamburgerMenu.svg";
 
 const NavLinks = () => {
   return (
@@ -36,6 +37,13 @@ const NavLinks = () => {
         <img src={cart} alt="Cart" />
       </div>
       <button className={classes.orderBtn}>Order Today</button>
+      <div className={classes.hamburgerMenu}>
+        <img
+          src={hamburgerMenu}
+          alt="Menu"
+          className={classes.hamburgerMenuIcon}
+        />
+      </div>
     </nav>
   );
 };

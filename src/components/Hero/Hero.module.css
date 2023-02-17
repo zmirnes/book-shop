@@ -1,5 +1,218 @@
 .hero {
   width: 100%;
   height: 100vh;
+  padding: 5rem 5rem;
+  overflow: hidden;
   background-color: #1b3764;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroWrapper {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.heroContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.welcomeTextContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-style: italic;
+}
+
+.heroParagraph {
+  color: #b4c7e7;
+  font-family: "Inter";
+  margin-top: 1rem;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.orderButton {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ffca42;
+  color: #1b3764;
+  border: none;
+}
+
+.freeDemoBtn {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.freeDemoBtn::after {
+  content: "";
+  background-color: white;
+  height: 1px;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -10%;
+}
+
+.aboutBook {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.bookSpec {
+  display: grid;
+  grid-template-areas:
+    "dot title"
+    "dot value";
+  align-items: flex-start;
+  grid-column-gap: 0.3rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffca42;
+  grid-area: dot;
+  margin-top: 0.3rem;
+}
+
+.specTitle {
+  grid-area: title;
+  line-height: 1;
+  font-size: 1.1rem;
+}
+
+.specValue {
+  grid-area: value;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  color: #b4c7e7;
+  white-space: nowrap;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroBookImage {
+  width: 50%;
+  display: block;
+  transition: 300ms;
+}
+
+@media only screen and (max-width: 1214px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .heroBookImage {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1012px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .heroBookImage {
+    width: 70%;
+  }
+
+  .aboutBook {
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .hero {
+    padding: 5rem 2rem;
+  }
+
+  .heroActions {
+    margin-top: 1rem;
+  }
+
+  .aboutBook {
+    margin-top: 0.5rem;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heroWrapper {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .heroContent {
+    width: 100%;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .heroParagraph {
+    text-align: center;
+  }
+
+  .aboutBook {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .heroBookImage {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .heroWrapper {
+    gap: 3rem;
+  }
+
+  .heroBookImage {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 396px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .heroParagraph {
+    font-size: 0.9rem;
+  }
 }
