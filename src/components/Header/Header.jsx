@@ -7,7 +7,7 @@ import twitter from "../../assets/images/social/twitter.svg";
 import linkedin from "../../assets/images/social/linkedIn.svg";
 
 const Header = () => {
-  const [headerClasses, setHeaderClasses] = useState(0);
+  const [headerClasses, setHeaderClasses] = useState(classes.header);
 
   window.addEventListener("scroll", () => {
     window.scrollY > 50
