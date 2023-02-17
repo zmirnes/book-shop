@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter";
+  font-weight: medium;
+}
+
+.navLink.active {
+  color: #ffca42;
+}
+
+.navLink:hover {
+  color: #ffca42;
+  transition: 300ms;
+}
+
+.cartIcon {
+  margin-right: 1rem;
+}
+
+.orderBtn {
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #ffca42;
+  outline: none;
+  border: none;
+  color: #1b3764;
+}
+
+@media only screen and (max-width: 1068px) {
+  .nav {
+    display: none;
+  }
+}
