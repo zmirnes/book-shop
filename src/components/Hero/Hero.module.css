@@ -59,6 +59,11 @@
   color: white;
   text-decoration: none;
   position: relative;
+  transition: 300ms;
+}
+
+.freeDemoBtn:hover {
+  color: #ffca42;
 }
 
 .freeDemoBtn::after {
