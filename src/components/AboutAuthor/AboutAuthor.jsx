@@ -7,9 +7,12 @@ import classes from "./AboutAuthor.module.css";
 const AboutAuthor = () => {
   return (
     <div className={classes.container}>
-      <div className={classes.authorImage}>
-        <img src={authorImage} alt="AuthorImage" />
-      </div>
+      <img
+        src={authorImage}
+        alt="AuthorImage"
+        className={classes.authorImage}
+      />
+
       <div className={classes.aboutAuthor}>
         <h1 className={classes.title}>About Author</h1>
         <p className={classes.aboutParagraph}>
