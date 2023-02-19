@@ -1,0 +1,46 @@
+.section {
+  padding: 3rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #1b3764;
+  font-size: 1.8rem;
+  position: relative;
+  font-weight: bold;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: 50%;
+  height: 2px;
+  width: 3rem;
+  background: #ffca42;
+  transform: translateX(50%);
+}
+
+.trustedList {
+  display: flex;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .trustedList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

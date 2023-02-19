@@ -1,0 +1,44 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:nth-child(2) .logo {
+  width: 8rem;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.companyName {
+  margin-top: auto;
+  color: #1b3764;
+  white-space: nowrap;
+}
+
+.description {
+  text-align: center;
+  color: #969aa0;
+  font-family: "Inter";
+  font-size: 0.8rem;
+  width: 80%;
+}
+
+@media only screen and (max-width: 860px) {
+  .description {
+    width: 100%;
+  }
+  .item:nth-child(2) .logo {
+    width: 5rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .title {
+    white-space: nowrap;
+  }
+}
