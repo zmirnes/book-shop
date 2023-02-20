@@ -58,3 +58,21 @@
 .image {
   width: 25rem;
 }
+
+@media only screen and (max-width: 1200px) {
+  .paragraph {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .image {
+    display: none;
+  }
+}
