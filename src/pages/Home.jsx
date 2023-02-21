@@ -6,6 +6,7 @@ import GetCopy from "../components/GetBookCopy/GetCopy";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import TrustedBy from "../components/TrustedBy/TrustedBy";
+import WhatReadersSay from "../components/WhatReadersSay/WhatReadersSay";
 import WhatWillYouLearn from "../components/WhatWillYouLearn/WhatWillYouLearn";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <GetCopy />
       <WhatWillYouLearn />
       <ChapterIncludes />
+      <WhatReadersSay />
     </Fragment>
   );
 };
