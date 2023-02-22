@@ -1,0 +1,101 @@
+.section {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  color: #1b3764;
+  font-weight: bold;
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background-color: #ffca42;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+}
+
+.circles {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #ffca42;
+  border-radius: 50%;
+  border: 1px solid #ffca42;
+}
+
+.circle:nth-child(5) {
+  background: rgb(255, 202, 66);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 202, 66, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
+.numbers {
+  margin-left: 0.5rem;
+  color: #1b3764;
+  font-weight: bold;
+}
+
+.overalRatingText {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  color: #1b3764;
+}
+
+.text {
+  color: #969aa0;
+  font-family: "Inter";
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.rightSide {
+  display: grid;
+  grid-template-areas:
+    "twoel oneel"
+    "twoel oneel";
+  gap: 1rem;
+  align-items: center;
+}
+
+.twoEl {
+  grid-area: twoel;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.oneEl {
+  grid-area: oneel;
+}

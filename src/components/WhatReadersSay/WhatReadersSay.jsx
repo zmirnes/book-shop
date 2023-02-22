@@ -1,5 +1,9 @@
 import React from "react";
+import ReviewBox from "./ReviewBox";
 import classes from "./WhatReadersSay.module.css";
+import profile1 from "../../assets/images/whatReadersSay/profile1.png";
+import profile2 from "../../assets/images/whatReadersSay/profile2.png";
+import profile3 from "../../assets/images/whatReadersSay/profile3.png";
 
 const WhatReadersSay = () => {
   return (
@@ -19,14 +23,34 @@ const WhatReadersSay = () => {
               <div className={classes.circle}></div>
               <div className={classes.circle}></div>
               <div className={classes.circle}></div>
+              <span className={classes.numbers}>(4.8/5)</span>
             </div>
-            <span className={classes.numbers}>(4.8/5)</span>
             <span className={classes.overalRatingText}>
               Overall Customer Ratings
             </span>
           </div>
         </div>
-        <div className={classes.rightSide}></div>
+        <div className={classes.rightSide}>
+          <div className={classes.twoEl}>
+            <ReviewBox
+              name="Martin Philips"
+              title=" Awesome Impact "
+              image={profile1}
+            />
+            <ReviewBox
+              name="James Anderson"
+              title=" Mind Blowing Words "
+              image={profile2}
+            />
+          </div>
+          <div className={classes.oneEl}>
+            <ReviewBox
+              name="Christina Louis"
+              title=" Great Books Collections "
+              image={profile3}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
