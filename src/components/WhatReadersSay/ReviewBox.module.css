@@ -56,3 +56,22 @@
   color: #b4c7e7;
   font-size: 0.9rem;
 }
+
+@media only screen and (max-width: 968px) {
+  .reviewBox {
+    width: min-content;
+  }
+
+  .review {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reviewBox {
+    width: 100%;
+  }
+
+  .review {
+    width: 100%;
+  }
+}
