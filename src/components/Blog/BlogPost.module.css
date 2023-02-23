@@ -1,0 +1,60 @@
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+}
+
+.postDetails {
+  background-color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.postTitle {
+  color: #1b3764;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.smallDescription {
+  color: #969aa0;
+  font-family: "Inter";
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.readMoreBtn {
+  text-decoration: none;
+  color: #1b3764;
+  font-weight: 700;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.readMoreBtn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0.02rem;
+  height: 1px;
+  background-color: #1b3764;
+  width: 100%;
+}
+
+.published {
+  color: #1b3764;
+  font-family: "Inter";
+  font-size: 0.8rem;
+}

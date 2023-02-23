@@ -1,0 +1,60 @@
+.section {
+  width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f8ff;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.title {
+  color: #1b3764;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: 50%;
+  height: 2px;
+  width: 3rem;
+  background: #ffca42;
+  transform: translateX(50%);
+}
+
+.blogPosts {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 1248px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1096px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+  .blogPosts {
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

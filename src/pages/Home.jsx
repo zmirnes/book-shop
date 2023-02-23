@@ -8,7 +8,7 @@ import Hero from "../components/Hero/Hero";
 import TrustedBy from "../components/TrustedBy/TrustedBy";
 import WhatReadersSay from "../components/WhatReadersSay/WhatReadersSay";
 import WhatWillYouLearn from "../components/WhatWillYouLearn/WhatWillYouLearn";
-
+import Blog from "../components/Blog/Blog";
 const Home = () => {
   return (
     <Fragment>
@@ -21,6 +21,7 @@ const Home = () => {
       <WhatWillYouLearn />
       <ChapterIncludes />
       <WhatReadersSay />
+      <Blog />
     </Fragment>
   );
 };

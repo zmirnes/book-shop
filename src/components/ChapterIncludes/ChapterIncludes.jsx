@@ -4,6 +4,7 @@ import ChapterBox from "./ChapterBox";
 
 const chapters = [
   {
+    id: "c1",
     chapterNumber: "Chapter - 01",
     chapterTitle: "Get Started Intro",
     chapterDescription:
@@ -12,6 +13,8 @@ const chapters = [
     length: "1 Hour 15 mins",
   },
   {
+    id: "c2",
+
     chapterNumber: "Chapter - 02",
     chapterTitle: "Create a Massive Content",
     chapterDescription:
@@ -20,6 +23,8 @@ const chapters = [
     length: "1 Hour 15 mins",
   },
   {
+    id: "c3",
+
     chapterNumber: "Chapter - 03",
     chapterTitle: "Maintaining the Creative Arcs",
     chapterDescription:
@@ -28,6 +33,8 @@ const chapters = [
     length: "1 Hour 15 mins",
   },
   {
+    id: "c4",
+
     chapterNumber: "Chapter - 04",
     chapterTitle: "The Conclusion",
     chapterDescription:
@@ -46,6 +53,7 @@ const ChapterIncludes = () => {
           {chapters.map((chapter) => {
             return (
               <ChapterBox
+                key={chapter.id}
                 number={chapter.chapterNumber}
                 title={chapter.chapterTitle}
                 description={chapter.chapterDescription}
