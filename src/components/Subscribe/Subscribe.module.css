@@ -1,0 +1,100 @@
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  background: #ffca42;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  color: #1b3764;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #1b3764;
+  position: absolute;
+  width: 3rem;
+  left: 50%;
+  bottom: -0.5rem;
+  transform: translateX(-50%);
+}
+
+.paragraph {
+  font-family: "Inter";
+  color: #1b3764;
+  font-size: 0.9rem;
+}
+
+.subscribeBox {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.inputBox {
+  width: 100%;
+  padding: 1rem 1rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.inputBox::placeholder {
+  font-family: "Inter";
+  font-size: 1rem;
+}
+
+.inputBox:focus {
+  border: none;
+  outline: none;
+}
+
+.subscribeBtn {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #1b3764;
+  color: white;
+  border: none;
+  padding: 1rem 5rem;
+}
+
+@media only screen and (max-width: 968px) {
+  .subscribeBox {
+    width: 100%;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .subscribeBtn {
+    padding: 1rem 3rem;
+  }
+
+  .container {
+    padding: 3rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .subscribeBox {
+    flex-direction: column;
+  }
+}

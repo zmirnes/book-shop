@@ -9,6 +9,7 @@ import TrustedBy from "../components/TrustedBy/TrustedBy";
 import WhatReadersSay from "../components/WhatReadersSay/WhatReadersSay";
 import WhatWillYouLearn from "../components/WhatWillYouLearn/WhatWillYouLearn";
 import Blog from "../components/Blog/Blog";
+import Subscribe from "../components/Subscribe/Subscribe";
 const Home = () => {
   return (
     <Fragment>
@@ -22,6 +23,7 @@ const Home = () => {
       <ChapterIncludes />
       <WhatReadersSay />
       <Blog />
+      <Subscribe />
     </Fragment>
   );
 };

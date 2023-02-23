@@ -1,6 +1,7 @@
 .post {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .thumbnail {
