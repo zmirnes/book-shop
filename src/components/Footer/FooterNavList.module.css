@@ -10,3 +10,14 @@
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 567px) {
+  .list {
+    width: 100%;
+    position: relative;
+  }
+
+  .title {
+    align-self: center;
+  }
+}

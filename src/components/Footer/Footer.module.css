@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,6 +11,7 @@
   width: 70%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logoAndSocial {
@@ -52,4 +53,63 @@
 .infoValue {
   font-family: "Inter";
   color: #b4c7e7;
+}
+
+.copyright {
+  flex-basis: 100%;
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  color: #b4c7e7;
+  font-size: 0.9rem;
+  border-top: 0.5px solid white;
+}
+
+.copyrightText {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyrightText a {
+  color: white;
+  text-decoration: none;
+  font-family: "Inter";
+}
+
+@media only screen and (max-width: 1347px) {
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1097px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 967px) {
+  .container {
+    width: 90%;
+    row-gap: 2rem;
+  }
+
+  .keepInTouch {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .section {
+    padding: 2rem 0 0 0;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

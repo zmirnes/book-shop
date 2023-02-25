@@ -101,6 +101,18 @@ const Footer = () => {
             <span className={classes.infoValue}>(+22) 123 - 4567 - 900</span>
           </div>
         </div>
+        <div className={classes.copyright}>
+          <span className={classes.copyrightText}>
+            &copy; Creadet by
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://mirneszahirovic.me"
+            >
+              Mirnes Zahirović
+            </a>
+          </span>
+        </div>
       </div>
     </section>
   );
