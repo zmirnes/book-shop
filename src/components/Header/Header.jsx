@@ -24,13 +24,13 @@ const Header = () => {
         </div>
         <div className={classes.socialIcons}>
           <a href="#facebook">
-            <img src={facebook} alt="Facebook" />
+            <img src={facebook} alt="Facebook" className={classes.socialIcon} />
           </a>
           <a href="#twitter">
-            <img src={twitter} alt="Twitter" />
+            <img src={twitter} alt="Twitter" className={classes.socialIcon} />
           </a>
           <a href="#linkedin">
-            <img src={linkedin} alt="LinkedIn" />
+            <img src={linkedin} alt="LinkedIn" className={classes.socialIcon} />
           </a>
         </div>
         <NavLinks />

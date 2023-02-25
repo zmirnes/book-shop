@@ -1,0 +1,12 @@
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,24 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circles {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.circle {
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 2px solid #ffca42;
+  border-radius: 50%;
+}
+
+.link {
+  text-decoration: none;
+  color: #b4c7e7;
+  font-size: 0.9rem;
+  font-family: "Inter";
+}
