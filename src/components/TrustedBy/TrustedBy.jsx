@@ -12,24 +12,28 @@ const trustedCompanies = [
     logo: logo1,
     name: "Amazen Corp",
     description: "A long established fact that a who looking at its layout.",
+    delay: 0,
   },
   {
     id: "t2",
     logo: logo2,
     name: "Megan Books",
     description: "A long established fact that a who looking at its layout.",
+    delay: 0.15,
   },
   {
     id: "t3",
     logo: logo3,
     name: "Los Books",
     description: "A long established fact that a who looking at its layout.",
+    delay: 0.3,
   },
   {
     id: "t4",
     logo: logo4,
     name: "Urban Lib",
     description: "A long established fact that a who looking at its layout.",
+    delay: 0.45,
   },
 ];
 
@@ -46,6 +50,7 @@ const TrustedBy = () => {
                 logo={company.logo}
                 name={company.name}
                 description={company.description}
+                animationDelay={company.delay}
               />
             );
           })}

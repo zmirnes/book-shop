@@ -36,11 +36,13 @@ const WhatReadersSay = () => {
               name="Martin Philips"
               title=" Awesome Impact "
               image={profile1}
+              animationDelay="0"
             />
             <ReviewBox
               name="James Anderson"
               title=" Mind Blowing Words "
               image={profile2}
+              animationDelay="0.15"
             />
           </div>
           <div className={classes.oneEl}>
@@ -48,6 +50,7 @@ const WhatReadersSay = () => {
               name="Christina Louis"
               title=" Great Books Collections "
               image={profile3}
+              animationDelay="0.3"
             />
           </div>
         </div>

@@ -1,9 +1,15 @@
 import React from "react";
 import classes from "./ChapterBox.module.css";
+import { motion } from "framer-motion";
 
 const ChapterBox = (props) => {
   return (
-    <div className={classes.chapterBox}>
+    <motion.div
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay: props.animationDelay }}
+      className={classes.chapterBox}
+    >
       <h3 className={classes.chapterTitle}>
         {props.number} {props.title}
       </h3>
@@ -20,7 +26,7 @@ const ChapterBox = (props) => {
           <span className={classes.specValue}>{props.length}</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

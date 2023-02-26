@@ -2,12 +2,17 @@ import React from "react";
 import classes from "./Hero.module.css";
 import book from "../../assets/images/book.svg";
 import line from "../../assets/images/line.svg";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className={classes.hero}>
       <div className={classes.heroWrapper}>
-        <div className={classes.heroContent}>
+        <motion.div
+          animate={{ scale: 1 }}
+          initial={{ scale: 0 }}
+          className={classes.heroContent}
+        >
           <div className={classes.welcomeTextContainer}>
             <img src={line} alt="Line" className={classes.welcomeLine} />
             <span className={classes.welcomeText}>Welcome To Pages</span>
@@ -40,10 +45,14 @@ const Hero = () => {
               <span className={classes.specValue}>4.5/5(306 Ratings)</span>
             </div>
           </div>
-        </div>
-        <div className={classes.heroImage}>
+        </motion.div>
+        <motion.div
+          animate={{ scale: 1 }}
+          initial={{ scale: 0 }}
+          className={classes.heroImage}
+        >
           <img src={book} alt="Book" className={classes.heroBookImage} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

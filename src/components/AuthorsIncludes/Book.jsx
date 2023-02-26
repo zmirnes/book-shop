@@ -1,9 +1,15 @@
 import React from "react";
 import classes from "./Book.module.css";
-
+import { motion } from "framer-motion";
 const Book = (props) => {
   return (
-    <div className={classes.book} key={props.id}>
+    <motion.div
+      whileInView={{ scale: 1 }}
+      initial={{ scale: 0 }}
+      viewport={{ once: true }}
+      className={classes.book}
+      key={props.id}
+    >
       <div className={classes.imageContainer}>
         <img src={props.image} alt="Book" className={classes.image} />
       </div>
@@ -24,7 +30,7 @@ const Book = (props) => {
         </div>
         <button className={classes.orderBtn}>Order Today</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

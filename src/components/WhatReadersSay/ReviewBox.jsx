@@ -1,9 +1,15 @@
 import React from "react";
 import classes from "./ReviewBox.module.css";
+import { motion } from "framer-motion";
 
 const ReviewBox = (props) => {
   return (
-    <div className={classes.reviewBox}>
+    <motion.div
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay: props.animationDelay }}
+      className={classes.reviewBox}
+    >
       <div className={classes.reviewer}>
         <img src={props.image} alt="Profile" className={classes.profileImage} />
         <div className={classes.details}>
@@ -24,7 +30,7 @@ const ReviewBox = (props) => {
           predefined chunks value.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

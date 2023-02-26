@@ -5,6 +5,7 @@ import NavLinks from "./NavLinks";
 import facebook from "../../assets/images/social/facebook.svg";
 import twitter from "../../assets/images/social/twitter.svg";
 import linkedin from "../../assets/images/social/linkedIn.svg";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [headerClasses, setHeaderClasses] = useState(classes.header);
@@ -17,7 +18,11 @@ const Header = () => {
 
   return (
     <header className={headerClasses}>
-      <div className={classes.headerWrapper}>
+      <motion.div
+        initial={{ y: "-100%" }}
+        animate={{ y: 0 }}
+        className={classes.headerWrapper}
+      >
         <div className={classes.logo}>
           <img src={Logo} alt="logo" />
           <span className={classes.logoText}>Pages</span>
@@ -34,7 +39,7 @@ const Header = () => {
           </a>
         </div>
         <NavLinks />
-      </div>
+      </motion.div>
     </header>
   );
 };

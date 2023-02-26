@@ -11,6 +11,7 @@ const chapters = [
       "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
     pages: "85 pages",
     length: "1 Hour 15 mins",
+    animationDelay: "0",
   },
   {
     id: "c2",
@@ -21,6 +22,7 @@ const chapters = [
       "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
     pages: "85 pages",
     length: "1 Hour 15 mins",
+    animationDelay: "0.15",
   },
   {
     id: "c3",
@@ -31,6 +33,7 @@ const chapters = [
       "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
     pages: "85 pages",
     length: "1 Hour 15 mins",
+    animationDelay: "0.30",
   },
   {
     id: "c4",
@@ -41,6 +44,7 @@ const chapters = [
       "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
     pages: "85 pages",
     length: "1 Hour 15 mins",
+    animationDelay: "0.45",
   },
 ];
 
@@ -59,6 +63,7 @@ const ChapterIncludes = () => {
                 description={chapter.chapterDescription}
                 pages={chapter.pages}
                 length={chapter.length}
+                animationDelay={chapter.animationDelay}
               />
             );
           })}

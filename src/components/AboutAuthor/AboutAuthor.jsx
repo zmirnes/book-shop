@@ -1,19 +1,24 @@
 import React from "react";
 import authorImage from "../../assets/images/aboutAuthor/authorImage.png";
 import qrCode from "../../assets/images/aboutAuthor/qr.png";
-
 import classes from "./AboutAuthor.module.css";
-
+import { motion } from "framer-motion";
 const AboutAuthor = () => {
   return (
     <div className={classes.container}>
-      <img
+      <motion.img
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
         src={authorImage}
         alt="AuthorImage"
         className={classes.authorImage}
       />
 
-      <div className={classes.aboutAuthor}>
+      <motion.div
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        className={classes.aboutAuthor}
+      >
         <h1 className={classes.title}>About Author</h1>
         <p className={classes.aboutParagraph}>
           All the Lorem Ipsum generators on the Internet tend to repeated
@@ -49,7 +54,7 @@ const AboutAuthor = () => {
             </span>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
