@@ -7,6 +7,7 @@ const TrustedItem = (props) => {
     <motion.div
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
+      viewport={{ once: true }}
       transition={{ delay: props.animationDelay }}
       className={classes.item}
     >

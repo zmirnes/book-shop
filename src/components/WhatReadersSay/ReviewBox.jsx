@@ -8,6 +8,7 @@ const ReviewBox = (props) => {
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ delay: props.animationDelay }}
+      viewport={{ once: true }}
       className={classes.reviewBox}
     >
       <div className={classes.reviewer}>

@@ -35,6 +35,7 @@ const WhatWillYouLearn = () => {
           <motion.img
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
             src={image}
             alt="Person reading book"
             className={classes.image}

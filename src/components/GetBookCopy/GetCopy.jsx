@@ -10,6 +10,7 @@ const GetCopy = () => {
         <motion.div
           initial={{ x: "-100%" }}
           whileInView={{ x: 0 }}
+          viewport={{ once: true }}
           className={classes.content}
         >
           <h4 className={classes.title}>Get Book Copy Today!</h4>

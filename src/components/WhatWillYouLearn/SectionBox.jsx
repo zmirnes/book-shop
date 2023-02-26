@@ -8,6 +8,7 @@ const SectionBox = (props) => {
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ delay: props.animationDelay }}
+      viewport={{ once: true }}
       className={classes.box}
     >
       <div className={classes.numberBox}>

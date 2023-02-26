@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./FooterListItem.module.css";
 
 const FooterListItem = (props) => {
-  console.log(props);
   return (
     <li className={classes.listItem}>
       <div className={classes.circles}>

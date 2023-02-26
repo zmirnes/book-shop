@@ -9,14 +9,16 @@ const AboutAuthor = () => {
       <motion.img
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
+        viewport={{ once: true }}
         src={authorImage}
         alt="AuthorImage"
         className={classes.authorImage}
       />
 
       <motion.div
-        initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
+        initial={{ scale: 0 }}
+        viewport={{ once: true }}
         className={classes.aboutAuthor}
       >
         <h1 className={classes.title}>About Author</h1>

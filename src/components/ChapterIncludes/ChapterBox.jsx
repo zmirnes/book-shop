@@ -8,6 +8,7 @@ const ChapterBox = (props) => {
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ delay: props.animationDelay }}
+      viewport={{ once: true }}
       className={classes.chapterBox}
     >
       <h3 className={classes.chapterTitle}>
